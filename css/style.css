@@ -38,7 +38,7 @@ a:hover {
     font-size: 22px;
     margin: 0px;
     padding-bottom: 10px;
-    border-bottom: 3px solid var(--yellow);
+    border-bottom: 3px solid var(--dhpink);
 }
 
 /* All Pages Top Title Css End  */
@@ -102,11 +102,11 @@ a:hover {
     animation: tagline-an 2s linear infinite;
 }
     @keyframes tagline-an {
-        0% {-webkit-text-fill-color: var(--blue);}
+        0% {-webkit-text-fill-color: var(--dhpink);}
         25% {-webkit-text-fill-color: white;}
-        50% {-webkit-text-fill-color: var(--blue);}
+        50% {-webkit-text-fill-color: var(--dhpink);}
         75% {-webkit-text-fill-color: white;}
-        100% {-webkit-text-fill-color: var(--blue);}
+        100% {-webkit-text-fill-color: var(--dhpink);}
     }
 @media screen and (max-width: 667px){
     #header .logo-tagline h2{
@@ -167,10 +167,15 @@ a:hover {
     padding: 8px 17px;
 }
 
-#header nav a:hover, #header nav li.active {
-    color: #111;
+#header nav a:hover {
+    color: #fff;
     font-weight: 500;
-    background-color: var(--yellow);
+    background-color: var(--dhpink);
+}
+#header nav li.active>a {
+    color: #fff;
+    font-weight: 500;
+    background-color: var(--dhpink);
 }
 
 /* Header Css End  */
@@ -243,13 +248,13 @@ a:hover {
 
 /* Key Feature Css Start  */
 .key-feature i{
-    color: var(--yellow);
+    color: var(--dhpink);
     font-size: 50px;
     margin-bottom: 20px;
 }
 
 .key-feature h5{
-    color: var(--yellow);
+    color: var(--dhpink);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -382,11 +387,11 @@ a:hover {
 } 
 /* Specify the background color to be shown when hovering over checkbox */ 
 .selfcheck:hover input ~ .selfcheckbox { 
-    background-color: #fcb215; 
+    background-color: var(--dhpink); 
 } 
 /* Specify the background color to be shown when checkbox is checked */ 
 .selfcheck input:checked ~ .selfcheckbox { 
-    background-color: #fcb215; 
+    background-color: var(--dhpink); 
 } 
 /* Checkmark to be shown in checkbox */ 
 /* It is not be shown when not checked */ 
@@ -525,13 +530,13 @@ a:hover {
 }
 
 .contact-us i{
-    color: var(--yellow);
+    color: var(--dhpink);
     font-size: 40px;
     margin-bottom: 20px;
 }
 
 .contact-us h5{
-    color: var(--yellow);
+    color: var(--dhpink);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
