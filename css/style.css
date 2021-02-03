@@ -1,0 +1,696 @@
+:root {
+    --blue: #1b2e5a;
+    --yellow: #fcb215;
+    --brown: #c13a22; 
+}
+body{
+    background-color: #fefaf3;
+}
+
+html,
+body, a, p, * {
+	margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #212121;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.light-bg{
+    background-color: #f4f4f4;
+}
+.modal-header span{
+    font-size: 30px;
+}
+
+/* All Pages Top Title Css Start  */
+
+.informative-title h3{
+    font-size: 22px;
+    margin: 0px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--yellow);
+}
+
+/* All Pages Top Title Css End  */
+
+
+/* Header Css Start */
+.top-header{
+    background-color: var(--yellow);
+    padding: 10px 0px;
+}
+
+.top-header .offer span{
+    background-color: var(--brown);
+    color: white;
+    padding: 0px 5px;
+}
+
+.top-header .infor ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-header .infor ul li{
+    display: inline-block;
+    margin: 0px 5px;
+    text-align: right;
+}
+
+.top-header .infor ul li i{
+    margin-right: 10px;
+}
+
+#header .main-logo img {
+    display: inline-block;
+    padding: 15px 0px;
+    width: 140px;
+}
+
+#header .logo-tagline .playful span {
+  position: relative;
+  color: #5362F6;
+  /*text-shadow: 0.25px 6px #E485F8;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #5362F6;
+  animation: scatter 1.75s infinite;
+}
+
+#header .logo-tagline .playful span:nth-child(2n) {
+  color: #ED625C;
+  /*text-shadow: 0.25px 6px #F2A063;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #ED625C;
+  animation-delay: 0.3s;
+}
+
+#header .logo-tagline .playful span:nth-child(3n) {
+  color: #fcb215;
+  /*text-shadow: 0.25px 6px #6EC0A9;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #fcb215;
+  animation-delay: 0.15s;
+}
+
+#header .logo-tagline .playful span:nth-child(5n) {
+  color: #555BFF;
+  /*text-shadow: 0.25px 6px #E485F8;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #555BFF;
+  animation-delay: 0.4s;
+}
+
+#header .logo-tagline .playful span:nth-child(7n), #header .logo-tagline .playful span:nth-child(11n) {
+  color: #13aa52;
+  /*text-shadow: 0.25px 6px #FF5555;*/
+  text-shadow: 2px 2px 0px #fefaf3, -2px 0 0px #fefaf3, 4px 2px 0 #13aa52;
+  animation-delay: 0.25s;
+}
+
+@keyframes scatter {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#header .logo-tagline h2, #header .logo-tagline h2 span {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0px;
+  letter-spacing: 1.3px;
+}
+/*#header .logo-tagline h2{
+    font-size: 32px; 
+    line-height: 35px;
+    font-weight: bold;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--yellow);
+    animation: tagline-an 2s linear infinite;
+}
+    @keyframes tagline-an {
+        0% {-webkit-text-fill-color: var(--blue);}
+        25% {-webkit-text-fill-color: white;}
+        50% {-webkit-text-fill-color: var(--blue);}
+        75% {-webkit-text-fill-color: white;}
+        100% {-webkit-text-fill-color: var(--blue);}
+    }*/
+@media screen and (max-width: 667px){
+    /*#header .logo-tagline h2{
+    font-size: 22px;
+    margin: 0px 15px; 
+    line-height: 25px;
+}*/
+    #header .logo-tagline h2 span {
+    font-size: 22px;
+    }
+    #header .logo-tagline h2 {
+    margin: 0px 15px; 
+    line-height: 25px;
+    }
+}
+#header .search-form {
+    margin-top: 6px;
+}
+#header .search-form form input[type=search] {
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#header .search-form button {
+    height: 45px;
+    width: 120px;
+    color: #fff;
+    background-color: var(--blue);
+    border: none;
+    transition: ease-in-out 0.2s; 
+}
+
+#header .search-form button:hover {
+    color: #111;
+    background-color: var(--yellow);
+}
+
+#header .navbar{
+    padding: 10px 0px;
+}
+
+@media screen and (max-width: 991px){
+    #header .navbar-collapse{
+        padding: 10px 20px;
+        background-color: #f4f4f4;
+        border-right: 2px solid var(--yellow);
+        border-left: 2px solid var(--yellow);
+    }
+    #header nav a {
+        border-bottom: 1px solid var(--yellow);
+    }
+} 
+
+@media screen and (min-width: 992px){
+    #header nav li {
+    margin-right: 8px;
+    }
+} 
+
+#header nav a {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+    padding: 8px 17px;
+}
+
+#header nav a:hover, #header nav li.active {
+    color: #111;
+    font-weight: 500;
+    background-color: var(--yellow);
+}
+
+/* Header Css End  */
+
+/* Slider Css Start  */
+#slider .carousel-caption {
+    top: 40%;
+    left: 15%;
+    text-align: left;
+    animation-name: example;
+    animation-duration: 1.2s;
+}
+  
+  @keyframes example {
+    0%   {left:-200%; top:40%;}
+    100% {left:15%; top:40%;}
+  }
+
+#slider .carousel-caption h3 { 
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--blue);
+    display: table;
+    border-bottom: 5px solid var(--yellow);
+    font-weight: 600;
+}
+
+#slider .carousel-caption p { 
+    font-size: 16px; 
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    display: table;
+    color: #fff;
+}
+/* Slider Css End  */
+
+/* Hot Selling Products Css Start */
+.hot-products .hot-products-part{
+    transition: ease-in-out .3s; 
+}
+.hot-products a:hover .hot-products-part {
+    transform: scale(1.2);
+}
+.hot-products a:hover .hot-products-part h5{
+    color: var(--red);
+}
+.hot-products .hot-products-part .hot-products-icon{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden; 
+}
+.hot-products .hot-products-part .hot-products-icon img{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hot-products .hot-products-part h5{
+    text-align: center;
+    font-size: 16px;
+}
+.hot-products .hot-products-part .blue{
+    border: 2px solid #448AFF;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .green{
+    border: 2px solid #8BC34A;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .yellow{
+    border: 2px solid #FFC107;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .pink{
+    border: 2px solid #FF4081;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .grey{
+    border: 2px solid #607D8B;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .orange{
+    border: 2px solid #FF5722;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .purple{
+    border: 2px solid #800080;
+    background-color: #ffffff;
+}
+.hot-products .hot-products-part .cyan{
+    border: 2px solid #00FFFF;
+    background-color: #ffffff;
+}
+/* Hot Selling Products Css End */
+
+/* Key Feature Css Start  */
+.key-feature i{
+    color: var(--yellow);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.key-feature h5{
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.key-feature p{
+    color: #111;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+/* Key Feature Css End  */
+
+/********* Product Listing Css Start  *********/
+.product-listing .card{
+    max-height: 380px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.product-listing .card a:hover {
+    text-decoration: none; 
+}
+
+.product-listing .card:hover {
+    box-shadow: 6px 7px 10px #cecece; 
+}
+
+.product-listing-image {
+    max-height: 200px;
+    overflow: hidden; 
+}
+
+.product-listing-image img{
+    background-size: contain;
+    min-height: 200px;
+    transition: ease-in-out 0.2s; 
+}
+
+.product-listing .card:hover img{
+    transform: scale(1.1);
+}
+
+.product-listing .card-body h5{
+    font-size: 18px;
+    color: var(--yellow);
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-listing .card-body .product-discount{
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    background-color: var(--red);
+    font-weight: 500;
+}
+
+.product-listing .card-body .product-text{
+    min-height: 65px;
+    max-height: 65px;
+    margin: 5px 0px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #666;
+}
+
+.product-listing .card-body .product-info{
+    color: var(--red);
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+/********* Product Listing Css End  *********/
+
+
+/*********  About Us Css Start  *********/
+.about-us h4{
+    font-size: 20px;
+}
+
+.about-us p{
+    font-size: 14px;
+}
+
+.best-product img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/*********  About Us Css End  *********/
+
+
+/********* Search Result/Product Listing Css End  *********/
+.filter-form form label{
+    font-weight: 500;
+}
+/*
+.filter-form form .checkbox-font{
+    font-weight: normal;
+    font-size: 13px;
+}*/
+.selfcheck { 
+    display: block; 
+    position: relative; 
+    padding-left: 35px; 
+    margin-bottom: 08px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    font-weight: 400 !important;
+    font-size: 13px;
+} 
+/* Hide the default checkbox */ 
+.selfcheck input[type=checkbox] { 
+    visibility: hidden; 
+} 
+/* Creating a custom checkbox based on demand */ 
+.selfcheckbox { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 20px; 
+    width: 20px; 
+    background-color: #e1e2e3; 
+    border-radius: 5px; 
+    margin-left: 10px;
+} 
+/* Specify the background color to be shown when hovering over checkbox */ 
+.selfcheck:hover input ~ .selfcheckbox { 
+    background-color: #fcb215; 
+} 
+/* Specify the background color to be shown when checkbox is checked */ 
+.selfcheck input:checked ~ .selfcheckbox { 
+    background-color: #fcb215; 
+} 
+/* Checkmark to be shown in checkbox */ 
+/* It is not be shown when not checked */ 
+.selfcheckbox:after { 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+/* Display checkmark when checked */ 
+.selfcheck input:checked ~ .selfcheckbox:after { 
+    display: block; 
+} 
+/* Styling the checkmark using webkit */ 
+/* Rotated the rectangle by 45 degree and showing only two border to make it look like a tickmark */ 
+.selfcheck .selfcheckbox:after { 
+    left: 7px; 
+    bottom: 5px; 
+    width: 6px; 
+    height: 12px; 
+    border: solid #fff; 
+    border-width: 0 3px 3px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+} 
+/********* Search Result/Product Listing Css End  *********/
+
+
+/********* Product Deatil Css Start  *********/
+
+/**** Gallery Css Start  ****/
+/* Four equal columns for gallery */
+.gallery-column {
+    padding: 15px 5px;
+    width: 25%;
+}
+/* Thumbnail images style inside the grid for gallery  */
+.gallery-column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    height: 90px;
+    border: 1px solid var(--yellow);
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.gallery-column img:hover {
+    opacity: 1;
+}
+/* The expanding image container for gallery */
+.gallery-container {
+    position: relative;
+    display: block;
+    max-height: 400px;
+    overflow: hidden;
+}
+.gallery-container img{
+    min-height: 100%;
+    transition: ease-in-out 1s;
+}
+.gallery-container img:hover{
+    transform: scale(1.3);
+}
+/**** Gallery Css End  ****/
+
+.product-detail .product-d-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+.product-detail .product-d-price{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-detail .product-d-strike{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.product-detail .product-d-discount{
+    font-size: 16px;
+    background-color: var(--red);
+    color: #fff;
+    padding: 2px 10px;
+    margin: 0px 0px 0px 10px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.product-detail .product-d-text{
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0px 0px 0px;
+    text-align: justify;
+}
+
+.product-detail .product-d-buy{
+    font-size: 14px;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    display: inline-block;
+    background-color: var(--yellow);
+    padding: 10px 0px;
+    margin: 30px 0px 10px 0px;
+    transition: ease-in-out 0.3s;
+}
+
+.product-detail .product-d-buy:hover{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--blue);
+    box-shadow: 5px 5px 8px #cecece;
+}
+
+.product-detail table tr td{
+    font-weight: 500;
+}
+/********* Product Deatil Css End  *********/
+
+
+/*********  Contact Us Css Start  *********/
+.contact-us h4{
+    font-size: 20px;
+}
+
+.contact-us p{
+    font-size: 14px;
+}
+
+.contact-us i{
+    color: var(--yellow);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-us h5{
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-us p{
+    color: #111;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+/*********  Contact Us Css End  *********/
+
+
+/********* Footer Css Start  *********/
+.footer-area {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.footer-area h5{
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-area li::before {
+    font-family: FontAwesome;
+    content: '\f101';
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footer-area i{
+    color: #fff;
+    font-size: 14px;
+    width: 20px;
+}
+
+.footer-area li a{
+    color: #fff;
+    font-size: 14px;
+    transition: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -moz-transition: ease 0.4s;
+}
+
+.footer-area li a:hover{
+    padding-left: 5px;
+}
+/********* Footer Css End  *********/
+
+
+/********* Whatsapp CTA Css Start  *********/
+.whatsapp-cta{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+.whatsapp-cta a{
+    background-color: #67df83;
+    padding: 15px;
+    height: 60px;
+    width: 60px;
+    display: block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1), 0 2px 32px 0 rgba(0,0,0,0.3);
+}
+
+.whatsapp-cta a i{
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 2px;
+}
+/********* Whatsapp CTA Start  *********/
