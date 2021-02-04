@@ -299,7 +299,7 @@ a:hover {
 
 .product-listing .card-body h5{
     font-size: 18px;
-    color: var(--yellow);
+    color: var(--red);
     white-space: nowrap; 
     width: 200px; 
     overflow: hidden;
