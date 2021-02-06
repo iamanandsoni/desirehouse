@@ -9,11 +9,3 @@ function myFunction(imgs) {
 	expandImg.src = imgs.src;
 	expandImg.parentElement.style.display = "block";
 }
-
-// Active Class via jQuery
-// $(document).ready(function() {
-//     $(".nav-item").click(function() {
-//         $(".nav-item").removeClass("active");
-//         $(this).addClass("active");
-//     });
-// });
